@@ -11,10 +11,10 @@ namespace NplacesOfPi
             Console.WriteLine("Enter the number of n decimal places of PI you would like to see");
             int decimalPlaces = int.Parse(Console.ReadLine());
 
-            var nDecimalPlaces = new DecimalFinder();
-            nDecimalPlaces.Find(decimalPlaces);
+            var decimalFinder = new DecimalFinder();
+            var piDecimalFinder = decimalFinder.Find(decimalPlaces);
 
-            Console.WriteLine(nDecimalPlaces);
+            Console.WriteLine("{0}", piDecimalFinder);
 
             Console.ReadKey();
         }
